@@ -29,9 +29,9 @@ inputField.addEventListener('keyup', event => {
       gifs.data.forEach( gif => {
         
           // template 
-          const template  = `
-            <video src="${gif.images.original.mp4}" autoplay loop></video>
-          `;
+          <div class="swiper-slide">
+              <video src="${gif.images.original.mp4}"></video>
+            </div>
         
           // append
           videoContainer.insertAdjacentHTML("afterbegin", template);
